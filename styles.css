@@ -1,25 +1,64 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background-color: #0f0f0f;
-      color: #e5e5e5;
-      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .container { text-align: center; padding: 2rem; }
-    h1 {
-      font-size: clamp(2.5rem, 8vw, 5rem);
-      font-weight: 700;
-      color: #ffffff;
-      letter-spacing: -0.02em;
-      margin-bottom: 1rem;
-    }
-    h1 span { color: #36D6B5; }
-    p {
-      font-size: 1.125rem;
-      color: #9ca3af;
-      max-width: 400px;
-      margin: 0 auto;
-    }
+body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 4.5rem;
+            margin: 0 0 1rem;
+            background: linear-gradient(90deg, #00ff9d, #00b8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .wave-hand {
+            font-size: 5rem;
+            cursor: pointer;
+            display: inline-block;
+            animation: wave 2.5s infinite ease-in-out;
+            transition: transform 0.2s;
+        }
+        .wave-hand:active {
+            transform: scale(1.2);
+        }
+        p {
+            font-size: 1.4rem;
+            opacity: 0.8;
+            margin: 0 0 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        @keyframes wave {
+            0% { transform: rotate(0deg); }
+            10% { transform: rotate(14deg); }
+            20% { transform: rotate(-8deg); }
+            30% { transform: rotate(14deg); }
+            40% { transform: rotate(-4deg); }
+            50% { transform: rotate(10deg); }
+            60% { transform: rotate(0deg); }
+            100% { transform: rotate(0deg); }
+        }
+        footer {
+            position: absolute;
+            bottom: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }

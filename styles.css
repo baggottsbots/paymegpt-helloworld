@@ -1,0 +1,25 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #0f0f0f;
+      color: #e5e5e5;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container { text-align: center; padding: 2rem; }
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    h1 span { color: #36D6B5; }
+    p {
+      font-size: 1.125rem;
+      color: #9ca3af;
+      max-width: 400px;
+      margin: 0 auto;
+    }
